@@ -97,28 +97,80 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* globals */
+
+@charset "UTF-8";
+html {
+  box-sizing:           border-box;
+}
+*, *:before, *:after {
+  box-sizing:           inherit;
+}
+body {
+  font-family:          'Futura-CondensedLight', Arial, sans-serif;
+}
+
+
 /* main navigation menu */
 
 .main-nav {
   background:           white;
-  font-family:          'Futura', sans-serif;
-  font-size:            1.25em;
+  font-size:            1.15em;
   top:                  0;
   left:                 0;
-  padding:              0.75em;
+  padding:              0.75em 0 0.75em 0;
   width:                100%;
   text-align:           center;
+  z-index:              9;
   position:             fixed;
 }
 .menu-bars, .nav-social, .nav-user {
   color:                black;
-  margin:               3em 0;
+  margin:               3.25em 0;
 }
-.nav-user {
-  text-align: left;
+.menu-bars {
+  right:                1.25em;
+  position:             relative;
+}
+.menu-text {
+  color:                black;
+  text-transform:       uppercase;
+  text-decoration:      none;
+  position:             relative;
+}
+.nav-social-fb {
+  position:             absolute;
+  left:                 7.75em;
+}
+.nav-social-ig {
+  position:             absolute;
+  left:                 9em;
+}
+.nav-social-pt {
+  position:             absolute;
+  left:                 10.50em;
+}
+.nav-social:hover {
+  color:               gray;
 }
 .logo {
-  max-width:            50%;
+  position:            absolute;
+  width:               180px;
+  left:                45%;
+  top:                 1em;
+
+}
+.nav-user-person {
+  position:             absolute;
+  right:                5.5em;
+}
+.nav-user-shop {
+  position:             absolute;
+  right:                3em;
+}
+.nav-user-search {
+  position:             absolute;
+  right:                0.5em;
 }
 .main-nav ul {
   list-style-type:      none;
@@ -126,23 +178,64 @@ textarea {
 }
 .main-nav li {
   float:                left;
-  margin:               0 2.25em 0 0;
+  margin:               0;
 }
 
 /* top hero image */
 
 .hero {
   width:                100%;
-  margin-top:           0.75em;
+  margin-top:           10.65em;
 }
 
+/* first row of articles */
 
+.section1 {
+  padding:              2em 1em 2em 1em;
+  float:                left;
+}
+.section1 img, .section2 img {
+  width:                100%;
+  position:             relative;
+}
+.article1 {
+  padding-right:        1em;
+  width:                35%;
+}
+.article2 {
+  padding-left:         1em;
+  width:                65%;
+}
+.section1 article, .section2 article {
+  height:               30em;
+  position:             relative;
+  left:                 0;
+  float:                left;
+}
+.caption,.section1 a, .section2 a {
+  color:                black;
+  font-size:            1em;
+  text-align:           center;
+  text-decoration:      none;
+}
+.section1 a:hover, .section2 a:hover {
+  color:                #B5973D;
+}
 
+/* second row of articles */
 
-
-
-
-
+.section2 {
+  padding:              8em 1em 2em 1em;
+  float:                left;
+}
+.article3 {
+  padding-right:        1em;
+  width:                65%;
+}
+.article4 {
+  padding-left:         1em;
+  width:                35%;
+}
 
 
 
