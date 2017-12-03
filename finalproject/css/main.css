@@ -106,10 +106,18 @@ html {
 *, *:before, *:after {
   box-sizing:           inherit;
 }
-body {
-  font-family:          'Futura-CondensedLight', Arial, sans-serif;
+@font-face {
+  font-family:          'Futura Medium';
+  src:                  url(../fonts/Futura-Medium.ttf);
 }
-
+h2 {
+  text-align:           center;
+  padding:              2em;
+  font-weight:          lighter;
+}
+body {
+  font-family:          'Futura Medium', sans-serif;
+}
 
 /* main navigation menu */
 
@@ -130,10 +138,15 @@ body {
 }
 .menu-bars {
   right:                1.25em;
+  top:                  0.1em;
   position:             relative;
 }
 .menu-text {
   color:                black;
+  font-family:          'Futura Medium', sans-serif;
+  font-size:            0.75em;
+  right:                1.15em;
+  top:                  4.15em;
   text-transform:       uppercase;
   text-decoration:      none;
   position:             relative;
@@ -151,14 +164,13 @@ body {
   left:                 10.50em;
 }
 .nav-social:hover {
-  color:               gray;
+  color:               #535353;
 }
 .logo {
   position:            absolute;
   width:               180px;
   left:                45%;
   top:                 1em;
-
 }
 .nav-user-person {
   position:             absolute;
@@ -191,7 +203,7 @@ body {
 /* first row of articles */
 
 .section1 {
-  padding:              2em 1em 2em 1em;
+  padding:              2em 1em 0em 1em;
   float:                left;
 }
 .section1 img, .section2 img {
@@ -207,14 +219,15 @@ body {
   width:                65%;
 }
 .section1 article, .section2 article {
-  height:               30em;
   position:             relative;
   left:                 0;
   float:                left;
 }
 .caption,.section1 a, .section2 a {
   color:                black;
+  font-family:          'Futura Medium', sans-serif;
   font-size:            1em;
+  letter-spacing:       0.05em;
   text-align:           center;
   text-decoration:      none;
 }
@@ -225,7 +238,7 @@ body {
 /* second row of articles */
 
 .section2 {
-  padding:              8em 1em 2em 1em;
+  padding:              2em 1em 1em 1em;
   float:                left;
 }
 .article3 {
@@ -237,6 +250,90 @@ body {
   width:                35%;
 }
 
+/* newsletter */
+
+.container {
+  background:           #E4F6FF;
+  display:              inline-block;
+  padding:              2em 0em 2em 0em;
+  width:                100%;
+}
+.col1 {
+  width:                33%;
+  font-size:            2em;
+  text-align:           center;
+  padding:              0.35em;
+  float:                left;
+}
+.col2 {
+  width:                33%;
+  padding:              2em 1em 2em 1.5em;
+  text-align:           center;
+  position:             relative;
+  line-height:          1.25em;
+  float:                left;
+}
+
+.col3 {
+  width:                33%;
+  float:                left;
+}
+form {
+  font-family: 'Futura Medium', sans-serif;
+  position:             relative;
+  float:                left;
+  padding:              2em 1em 2em 1em;
+  text-align: center;
+}
+textarea {
+  font-family:          sans-serif;
+  font-weight:          lighter;
+  text-align:           center;
+  max-width:            100%;
+  float:                left;
+}
+form input {
+  color:                white;
+  background:           black;
+  text-transform:       uppercase;
+  padding:              0.75em 1.25em;
+  border-radius:        0px;
+  float:                left;
+}
+
+/* footer */
+
+footer {
+  color:                white;
+  background:           black;
+  font-size:            0.95em;
+  display:              inline-block;
+  position:             absolute;
+  padding:              3em 2em 3em 2em;
+  width:                100%;
+}
+footer a {
+  color:                white;
+  text-decoration:      none;
+}
+.address {
+  line-height:          1em;
+}
+.copyright {
+  font-size:            0.8em;
+  margin-top:           3em;
+}
+.footer-col1, .footer-col3 {
+  width:                40%;
+  float:                left;
+}
+.footer-col1 {
+  padding-right:        4em;
+}
+.footer-col2 {
+  width:                20%;
+  float:                left;
+}
 
 
 /* ==========================================================================
