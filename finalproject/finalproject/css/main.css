@@ -309,7 +309,7 @@ footer {
   font-size:            0.95em;
   display:              inline-block;
   position:             absolute;
-  padding:              3em 2em 3em 2em;
+  padding:              4em 2em 10em 2em;
   width:                100%;
 }
 footer a {
@@ -334,6 +334,10 @@ footer a {
   width:                20%;
   float:                left;
 }
+.footer-link {
+  border-bottom:        0.125em solid #1C1C1C;
+  padding-bottom:       0.5em;
+}
 .footer-col3 {
   font-size:            2em;
   padding-left:         2em;
@@ -346,7 +350,7 @@ footer a {
   background:           white;
 }
 .fa-stack {
-  font-size:            0.6em;
+  font-size:            0.575em;
   margin:               1.25em 0em 0em 0em;
 }
 .fb-border, .ig-border, .pt-border {
