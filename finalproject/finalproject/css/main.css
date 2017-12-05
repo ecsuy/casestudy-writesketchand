@@ -132,6 +132,54 @@ body {
   z-index:              9;
   position:             fixed;
 }
+.main-nav a {
+  color: black;
+  text-decoration: none;
+}
+.main-nav ul {
+  list-style-type:      none;
+  margin:               0;
+}
+.main-nav li {
+  float:                left;
+  margin:               0;
+}
+.main-nav li ul {
+  display:              none;
+  position:             absolute;
+  padding:              0;
+}
+.main-nav li:hover ul {
+  display:              block;
+}
+.main-nav li li {
+  background:           white;
+  font-size:            0.9em;
+  border-bottom:        0.0075em solid gray;
+  border-left:          0.0075em solid gray;
+  border-right:         0.0075em solid gray;
+  text-align:           left;
+  width:                6.8em;
+  padding:              0.325em 0em 0.325em 0.25em;
+  position:             relative;
+  top:                  3.25em;
+  right:                2.45em;
+  float:                none;
+}
+.main-nav li li a:hover {
+  color:                #535353;
+}
+.nav-search {
+  font-family:          'Futura Medium', sans-serif;
+  width:                4.5em;
+  margin-top:           0.75em;
+  padding:              0.068em 0em 0.068em 0em;
+}
+.search-icon {
+  color:                white;
+  background:           black;
+  padding:              0.25em;
+}
 .menu-bars, .nav-social, .nav-user {
   color:                black;
   margin:               3.25em 0;
@@ -143,10 +191,9 @@ body {
 }
 .menu-text {
   color:                black;
-  font-family:          'Futura Medium', sans-serif;
   font-size:            0.75em;
   right:                1.15em;
-  top:                  4.15em;
+  top:                  4.075em;
   text-transform:       uppercase;
   text-decoration:      none;
   position:             relative;
@@ -164,13 +211,13 @@ body {
   left:                 10.50em;
 }
 .nav-social:hover {
-  color:               #535353;
+  color:                #535353;
 }
 .logo {
-  position:            absolute;
-  width:               180px;
-  left:                45%;
-  top:                 1em;
+  position:             absolute;
+  width:                180px;
+  left:                 45%;
+  top:                  1em;
 }
 .nav-user-person {
   position:             absolute;
@@ -183,14 +230,6 @@ body {
 .nav-user-search {
   position:             absolute;
   right:                0.5em;
-}
-.main-nav ul {
-  list-style-type:      none;
-  margin:               0;
-}
-.main-nav li {
-  float:                left;
-  margin:               0;
 }
 
 /* top hero image */
@@ -225,7 +264,6 @@ body {
 }
 .caption,.section1 a, .section2 a {
   color:                black;
-  font-family:          'Futura Medium', sans-serif;
   font-size:            1em;
   letter-spacing:       0.05em;
   text-align:           center;
@@ -282,17 +320,18 @@ form {
   font-family: 'Futura Medium', sans-serif;
   position:             relative;
   float:                left;
-  padding:              2em 1em 2em 1em;
-  text-align: center;
+  margin-top:           2em;
+  text-align:           center;
 }
-textarea {
+.email-form {
   font-family:          sans-serif;
   font-weight:          lighter;
   text-align:           center;
   max-width:            100%;
+  height:               2.75em;
   float:                left;
 }
-form input {
+.button {
   color:                white;
   background:           black;
   text-transform:       uppercase;
