@@ -110,7 +110,7 @@ html {
   font-family:          'Futura Medium';
   src:                  url(../fonts/Futura-Medium.ttf);
 }
-body {
+body, input {
   font-family:          'Futura Medium', sans-serif;
 }
 h2 {
@@ -170,7 +170,6 @@ h2 {
   color:                #535353;
 }
 .nav-search {
-  font-family:          'Futura Medium', sans-serif;
   width:                4.5em;
   margin-top:           0.75em;
   padding:              0.068em 0em 0.068em 0em;
@@ -231,11 +230,26 @@ h2 {
   position:             absolute;
   right:                0.5em;
 }
-.search-dropdown-text {
+.search-dropdown {
   display:              none;
 }
-.search-dropdown li li a:hover {
-  display: block;
+.search-hover:hover div {
+  background:           white;
+  font-size:            0.9em;
+  display:              block;
+  position:             fixed;
+  top:                  5.75em;
+  right:                0.5em;
+  padding:              0.5em 0em 0.5em 0em;
+}
+.drop-box {
+  width:                5em;
+  margin-top:           0.25em;
+}
+.drop-search {
+  color:                white;
+  background:           black;
+  padding:              0.25em;
 }
 
 /* top hero image */
@@ -387,9 +401,10 @@ form {
 
 /* products */
 
-.section3 {
+.clearfix {
   background:           url(../img/gradient.png) no-repeat;
   padding-bottom:       3em;
+  overflow:             auto;
 }
 .favorites {
   padding:              3.5em 0em;
@@ -440,11 +455,12 @@ form {
   font-size:            0.95em;
   margin:               0em 2em;
 }
-.out-of-stock {
+.stock {
+  background:           hsla(100, 100%, 100%, 0.75);
   font-weight:          bold;
   text-transform:       uppercase;
   text-align:           center;
-  margin-top:           0.85em;
+  margin-top:           1em;
   width:                100%;
 }
 
@@ -491,7 +507,7 @@ footer a {
 }
 .payment-icons i {
   color:                #1B1B1B;
-  background:           gray;
+  background:           dimgray;
 }
 .payment-icons i:hover {
   background:           white;
